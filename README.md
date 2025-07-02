@@ -269,7 +269,7 @@ Con los parámetros preentrenados incluidos, el modelo debería alcanzar una pre
 
 ## 🛠️ Posibles Mejoras
 
-- [ ] Separación de carpetas en funciones y codigo principal
+- [X] Separación de carpetas en funciones y codigo principal
 - [ ] Añadir funciones para mejorar la visibilidad de los datos
 - [ ] Implementación de paralelización real para múltiples procesos
 
