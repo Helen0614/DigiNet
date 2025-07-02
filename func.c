@@ -16,21 +16,8 @@
 // Funciones auxiliares //
 //**********************//
 
-void print_num(){
-    int posicion;
-    bool continuar = true;
-    while (continuar) {
-        printf("Ingrese una posición para ver la imagen y la predicción (o -1 para salir): ");
-        scanf("%d", &posicion);
-        if (posicion == -1) {
-            continuar = false;
-        } else {
-            imprimir_imagen(data, predicciones, posicion);
-        }
-    }
-}
-
 void limpiar() {
+    printf("Presione Enter para continuar...\n");
     getchar();
     system("clear");
 }
@@ -304,8 +291,6 @@ double** mat_mul(double **mat1, double **mat2, int nrows, int ncols, int n) {
             }
         }
     }
-
-    print_matrix(result, nrows, ncols, 0, 0);
 
     return result;
 }

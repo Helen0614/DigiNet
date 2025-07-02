@@ -244,7 +244,17 @@ int main(int argc, char *argv[]) {
 
     limpiar();
 
-    print_num();
+    int posicion;
+    int continuar = 1;
+    while (continuar) {
+        printf("Ingrese una posición para ver la imagen y la predicción (o -1 para salir): ");
+        scanf("%d", &posicion);
+        if (posicion == -1) {
+            continuar = 0;
+        } else {
+            imprimir_imagen(data, predicciones, posicion);
+        }
+    }
 
     unload_data();
     return 0;
